@@ -32,7 +32,13 @@ function postMessage() {
 
   body = {
     "bot_id" : botID,
-    "text" : botResponse
+    "text" : botResponse,
+    "attachments" : [
+    {
+      "type"  : "image",
+      "url"   : "https://i.groupme.com/640x640.jpeg.9367b2421e2b427cb9e6902be28431da"
+    }
+  ]
   };
 
   console.log('sending ' + botResponse + ' to ' + botID);
@@ -51,7 +57,7 @@ function postMessage() {
   botReq.on('timeout', function(err) {
     console.log('timeout posting message '  + JSON.stringify(err));
   });
-  //botReq.end(JSON.stringify(body));
+  botReq.end(JSON.stringify(body));
 }
 
 
