@@ -22,7 +22,7 @@ function respond() {
 function postMessage() {
   var botResponse, options, body, botReq;
 
-  botResponse = "is a bitch";
+  botResponse = "";
 
   options = {
     hostname: 'api.groupme.com',
@@ -36,7 +36,7 @@ function postMessage() {
     "attachments" : [
     {
       "type"  : "image",
-      "url"   : "https://i.groupme.com/640x640.jpeg.9367b2421e2b427cb9e6902be28431da"
+      "url"   : "https://i.groupme.com/252x87.png.64e849eb1acc435b8314dd2bedc9631a"
     }
   ]
   };
